@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staffs",
+  "info": {
+    "singularName": "staff",
+    "pluralName": "staffs",
+    "displayName": "Staff",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "linkedin_id": {
+      "type": "string"
+    },
+    "linkedin_link": {
+      "type": "string"
+    },
+    "facebook_id": {
+      "type": "string"
+    },
+    "facebook_link": {
+      "type": "string"
+    },
+    "instagram_id": {
+      "type": "string"
+    },
+    "instagram_link": {
+      "type": "string"
+    },
+    "twitter_id": {
+      "type": "string"
+    },
+    "twitter_link": {
+      "type": "string"
+    },
+    "pinterest_id": {
+      "type": "string"
+    },
+    "pinterest_link": {
+      "type": "string"
+    },
+    "youtube_id": {
+      "type": "string"
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "companies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::company.company",
+      "mappedBy": "staff"
+    }
+  }
+}

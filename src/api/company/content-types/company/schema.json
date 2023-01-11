@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "street": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "google_my_business": {
+      "type": "string"
+    },
+    "linkedin_id": {
+      "type": "string"
+    },
+    "linkedin_link": {
+      "type": "string"
+    },
+    "facebook_id": {
+      "type": "string"
+    },
+    "intagram_id": {
+      "type": "string"
+    },
+    "instagram_link": {
+      "type": "string"
+    },
+    "twitter_id": {
+      "type": "string"
+    },
+    "pinterest_id": {
+      "type": "string"
+    },
+    "pinterest_link": {
+      "type": "string"
+    },
+    "tiktok_id": {
+      "type": "string"
+    },
+    "tiktok_link": {
+      "type": "string"
+    },
+    "youtube_id": {
+      "type": "string"
+    },
+    "youtube_link": {
+      "type": "string"
+    },
+    "facebook_link": {
+      "type": "string"
+    },
+    "twitter_link": {
+      "type": "string"
+    },
+    "staff": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::staff.staff",
+      "inversedBy": "companies"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
